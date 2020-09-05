@@ -1,0 +1,53 @@
+﻿Dumbledore	Albus	R	
+557 Rodeo Trl	
+Rantoul	IL	USA	61866	
+Dean
+
+Granger	Hermione	S	
+190 Clemton Ave	
+Champaign	IL	USA	61821
+Archivist
+Needs loan
+
+Longbottom	Neville	R	
+34 Lark Meadow Dr	
+Savoy	IL	USA	61874
+Doctor
+
+Lovegood	Luna	D	
+245-B Church St	
+Urbana	IL	USA	61802
+Student	
+Needs loan
+
+Lupin	Remus	W	
+911 Megellan Ave	
+Bloomington 	IL	USA	61701
+Doctor - pediatrician
+
+Malfoy	Draco	M	
+987 Withrop Lane	
+Urbana	IL	USA	61801
+Unknown profession
+
+Pettigrew	Peter		
+55 Shadow Canyon Trl	
+Indianapolis	IN	USA	46077
+Librarian
+Needs financing
+
+Potter	Harry	D	
+2008 Williams Dr	
+Chicago	IL	USA	60007
+Professor, UIC
+
+Weasley	Ginny		
+8890 Winston St	
+Champaign	IL	USA	61820
+Stay at home mother
+Inquiry into financing options
+
+Weasley	Ronald	R	
+54 Lane Ave	
+Chicago	IL	USA	60018
+Research scientist
