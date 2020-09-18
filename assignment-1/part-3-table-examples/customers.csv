@@ -1,6 +1,6 @@
-id,first_name,last_name,middle_name_initial,profession,address,city,state,country
-1,Potter,Harry,D,"Professor, UIC",2008 Williams Dr,Chicago,IL,USA
-2,Granger,Hermione,S,Archivist,190 Clemton Ave,,IL,USA
-3,Malfoy,Draco,M,Unknown profession,987 Withrop Lane,Urbana,IL,USA
-4,Pettigrew,Peter,,Librarian,55 Shadow Canyon Trl,Indianapolis,IN,USA
-5,Weasley,Ginny,,Stay at home mother,8890 Winston St,Champaign,IL,USA
+id,first_name,last_name,middle_name_initial,profession,address,city,state,country,note
+1,Potter,Harry,D,"Professor, UIC",2008 Williams Dr,Chicago,IL,USA,
+2,Granger,Hermione,S,Archivist,190 Clemton Ave,,IL,USA,Needs loan
+3,Malfoy,Draco,M,Unknown profession,987 Withrop Lane,Urbana,IL,USA,
+4,Pettigrew,Peter,,Librarian,55 Shadow Canyon Trl,Indianapolis,IN,USA,Needs financing
+5,Weasley,Ginny,,Stay at home mother,8890 Winston St,Champaign,IL,USA,Inquiry into financing options

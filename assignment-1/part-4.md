@@ -2,10 +2,9 @@
 
 
 My database design was based on the 3 files from the auto dealer. I decided to create 5 different 
-tables based on the data needs from the three different departments: customer_leads, customers, inventory, sales, and vehicles. 
+tables based on the data needs from the three different departments: customers, inventory, sales, and vehicles. 
 
-- customer_leads: This contains customer lead information including a log of potential and existing clients. 
-- customers: This table has all existing customers including those with a sale and potential.  
+- customers: This table has all existing customers including those with a sale and potential.   
 - inventory: This table contains all available vehicles for sale. 
 - sales: Holds sale information including vehicle, customer, and related sale metadata. 
 - vehicles: Contains specific vehicle information like year, make, and model. 
