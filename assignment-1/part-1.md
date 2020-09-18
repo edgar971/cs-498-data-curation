@@ -1,3 +1,5 @@
+Assignment 1 by Edgar S Pino Beltran (edgarsp2)
+
 The inventory file contains vehicle information like make, year, model, and price. 
 It also includes an ID unique to each vehicle and mostly information used to list the car for sale. 
 The sales file has information about sold vehicles. This is a mix of customer personal information like name and
