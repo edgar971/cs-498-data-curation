@@ -1,0 +1,16 @@
+<!ELEMENT Article (Title, Date, Author+, ArticleLength, Body, Section+, Image*, Link*, OrderedList*, HighlightedText*)>
+<!ELEMENT Image (#PCDATA)>
+<!ATTLIST Image src CDATA #REQUIRED>
+<!ATTLIST Image description CDATA #IMPLIED>
+<!ELEMENT OrderedList (Item+)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Date (#PCDATA)>
+<!ATTLIST Date timezone CDATA #REQUIRED>
+<!ELEMENT Author (#PCDATA)>
+<!ELEMENT ArticleLength (#PCDATA)>
+<!ATTLIST ArticleLength numberOfWords CDATA #REQUIRED>
+<!ELEMENT Body (#PCDATA)>
+<!ELEMENT Section (#PCDATA)>
+<!ELEMENT Link (#PCDATA)>
+<!ATTLIST Link to CDATA #REQUIRED>
+<!ELEMENT HighlightedText (#PCDATA)>
