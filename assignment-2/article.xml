@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<!DOCTYPE Article [
+  <!ELEMENT Article (Title, AuthorName+, Date, ArticleLength, Body)>
+  <!ELEMENT Image (#PCDATA)>
+  <!ELEMENT Body (Section+)>
+  <!ELEMENT Section (Heading|Image|Link|Paragraph|OrderedList|HighlightedText)*>
+  <!ATTLIST Image src CDATA #REQUIRED>
+  <!ATTLIST Image description CDATA #IMPLIED>
+  <!ELEMENT OrderedList (Item+)>
+  <!ELEMENT Item ANY>
+  <!ELEMENT Paragraph ANY>
+  <!ELEMENT Title (#PCDATA)>
+  <!ELEMENT Heading (#PCDATA)>
+  <!ELEMENT Date (#PCDATA)>
+  <!ATTLIST Date timezone CDATA #REQUIRED>
+  <!ELEMENT AuthorName (#PCDATA)>
+  <!ELEMENT ArticleLength (#PCDATA)>
+  <!ATTLIST ArticleLength minutes CDATA #REQUIRED>
+  <!ELEMENT Link (#PCDATA)>
+  <!ATTLIST Link to CDATA #REQUIRED>
+  <!ELEMENT HighlightedText (#PCDATA)>
+]>
+<Article>
+  <Title>Attention in NLP</Title>
+  <AuthorName>Kate Loginova</AuthorName>
+  <Date timezone="America/Los_Angeles">Jun 22, 2018</Date>
+  <ArticleLength minutes="13">13 min read</ArticleLength>
+  <Body>
+    <Section>
+      <Paragraph>
+        In this post, I will describe recent work on attention in deep learning models for natural language processing. I’ll start with the attention mechanism as it was introduced by Bahdanau. 
+      Then, we will go through self-attention, two-way attention, key-value-predict models and hierarchical attention.
+      </Paragraph>
+    </Section>
+    <Section>
+      <Paragraph>
+        In many tasks, such as machine translation or dialogue generation, we have a sequence of words as an input (e.g., an original text in English) and would like to generate another sequence of words as an output (e.g., a translation to Korean). Neural networks, especially recurrent ones (RNN), are well suited for solving such a task. 
+      I assume that you are familiar with RNNs and
+        <Link to="http://www.bioinf.jku.at/publications/older/2604.pdf">LSTMs</Link>
+        . Otherwise, I recommend to check out an explanation in a famous blog post by Christopher Olah.
+      </Paragraph>
+    </Section>
+    <Section>
+      <Paragraph>
+      The “sequence-to-sequence” neural network models are widely used for NLP. A popular type of these models is an “encoder-decoder”. 
+      There, one part of the network — encoder — encodes the input sequence into a fixed-length context vector. This vector is an internal representation of the text. This context vector is then decoded into the output sequence by the decoder. See an example:
+      </Paragraph>
+    </Section>
+    <Section>
+      <Image src="https://miro.medium.com/max/700/1*1ui7iDq956eDs-mAZHEdIg.png" description="An encoder-decoder neural network architecture." />
+      <Paragraph>
+      Here h denotes hidden states of the encoder and s of the decoder. Tx and Ty are the lengths of the input and output word sequences respectively. q is a function which generates the context vector out of the encoder’s hidden states. 
+      It can be, for example, just q({h_i}) = h_T. So, we take the last hidden state as an internal representation of the entire sentence.
+      </Paragraph>
+    </Section>
+    <Section>
+      <Heading>
+        Attention
+      </Heading>
+      <Paragraph>
+        The basic idea: each time the model predicts an output word, it only uses parts of an input where the most relevant information is concentrated instead of an entire sentence. In other words, it only pays attention to some input words. Let’s investigate how this is implemented.
+      </Paragraph>
+      <Image src="https://miro.medium.com/max/700/1*9Lcq9ni9aujScFYyyHRhhA.png" description="An illustration of the attention mechanism (RNNSearch) proposed by [Bahdanau, 2014]." />
+      <Paragraph>
+        Encoder works as usual, and the difference is only on the decoder’s part. As you can see from a picture, the decoder’s hidden state is computed with a context vector, the previous output and the previous hidden state. But now we use not a single context vector c, but a separate context vector c_i for each target word.
+      </Paragraph>
+      <Paragraph>
+        <HighlightedText>The weight of each annotation is computed by an alignment model which scores how well the inputs and the output match.</HighlightedText>
+        An alignment model is a feedforward neural network, for instance. 
+        In general, it can be any other model as well.
+      </Paragraph>
+    </Section>
+    <Section>
+      <Heading>
+        Variations of attention
+      </Heading>
+      <Paragraph>
+        <Link to="https://arxiv.org/abs/1508.04025">[Luong, 2015]</Link>
+        introduces the difference between global and local attention. The idea of a global attention is to use all the hidden states of the encoder when computing each context vector. The downside of a global attention model is that it has to attend to all words on the source side for each target word, which is computationally costly. To overcome this, the local attention first chooses a position in the source sentence. This position will determine a window of words that the model attends to. The authors also experimented with different alignment functions and simplified the computation path compared to Bahdanau’s work.
+      </Paragraph>
+      <Paragraph>
+        Attention Sum Reader [Kadlec, 2016] uses attention as a pointer over discrete tokens in the text. The task is to select an answer to a given question from the context paragraph. The difference with other methods is that the model selects the answer from the context directly using the computed attention instead of using the attention scores to weigh the sum of hidden vectors.
+      </Paragraph>
+      <Image src="https://miro.medium.com/max/700/1*iMoEyRo18sOegWVWy_1JTw.png" description="Attention Sum Reader." />
+      <Paragraph>
+        As an example, let us consider the question-context pair. Let the context be “A UFO was observed above our city in January and again in March.” and the question be “An observer has spotted a UFO in … .” January and March are equally good candidates, so the previous models will assign equal attention scores. They would then compute a vector between the representations of these two words and propose the word with the closest word embedding as the answer. At the same time, Attention Sum Reader would correctly propose January or March, because it chooses words directly from the passage.
+      </Paragraph>
+    </Section>
+    <Section>
+      <Heading>
+        Classification of attention mechanisms
+      </Heading>
+      <Paragraph>
+        There have been several attempts to classify the existing attention models. I’ll outline the main differences mentioned in different literature overviews.
+      </Paragraph>
+      <Image src="https://miro.medium.com/max/700/1*fM7O-UzKz2O95CsuVWHZnQ.png" description="distinguish between several types of attention fusion processes" />
+      <OrderedList>
+        <Item>
+          attention weights computation — see
+          <Link to="https://arxiv.org/abs/1611.01603">[Seo, 2016]</Link>
+        </Item>
+        <Item>
+          multi-pass &amp; single-pass — see
+          <Link to="https://arxiv.org/abs/1704.07415">[Gong, 2017]</Link>
+        </Item>
+        <Item>one-dimensional attention &amp; two-dimensional attention</Item>
+        <Item>one-way &amp; two-way attention (especially relevant for textual entailment and question answering)</Item>
+        <Item>different matching and fusion functions</Item>
+      </OrderedList>
+      <Paragraph>
+        I have tried to organize the papers mentioned in this post (and some other related to them) into a hierarchy of citations. 
+        You can find a
+        <Link to="https://www.draw.io/?lightbox=1&amp;target=blank&amp;highlight=FFFFFF&amp;edit=_blank&amp;layers=1&amp;nav=1&amp;page=1#G1sflgpGyT4pccPy_4TCZfkEiCt2WmHEy0">clickable version here</Link>
+        as a draw.io diagram. The colors of the cells correspond to the NLP task.
+      </Paragraph>
+    </Section>
+  </Body>
+</Article>
