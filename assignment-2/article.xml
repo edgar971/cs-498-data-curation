@@ -12,18 +12,19 @@
   <!ELEMENT Title (#PCDATA)>
   <!ELEMENT Heading (#PCDATA)>
   <!ELEMENT Date (#PCDATA)>
-  <!ATTLIST Date timezone CDATA #REQUIRED>
+  <!ATTLIST Date timezone (East|Central|Pacific) #REQUIRED>
   <!ELEMENT AuthorName (#PCDATA)>
   <!ELEMENT ArticleLength (#PCDATA)>
   <!ATTLIST ArticleLength minutes CDATA #REQUIRED>
   <!ELEMENT Link (#PCDATA)>
   <!ATTLIST Link to CDATA #REQUIRED>
+  <!ATTLIST Link external (true|false) #REQUIRED>
   <!ELEMENT HighlightedText (#PCDATA)>
 ]>
 <Article>
   <Title>Attention in NLP</Title>
   <AuthorName>Kate Loginova</AuthorName>
-  <Date timezone="America/Los_Angeles">Jun 22, 2018</Date>
+  <Date timezone="Central">Jun 22, 2018</Date>
   <ArticleLength minutes="13">13 min read</ArticleLength>
   <Body>
     <Section>
@@ -36,7 +37,7 @@
       <Paragraph>
         In many tasks, such as machine translation or dialogue generation, we have a sequence of words as an input (e.g., an original text in English) and would like to generate another sequence of words as an output (e.g., a translation to Korean). Neural networks, especially recurrent ones (RNN), are well suited for solving such a task. 
       I assume that you are familiar with RNNs and
-        <Link to="http://www.bioinf.jku.at/publications/older/2604.pdf">LSTMs</Link>
+        <Link to="http://www.bioinf.jku.at/publications/older/2604.pdf" external="true">LSTMs</Link>
         . Otherwise, I recommend to check out an explanation in a famous blog post by Christopher Olah.
       </Paragraph>
     </Section>
@@ -75,7 +76,7 @@
         Variations of attention
       </Heading>
       <Paragraph>
-        <Link to="https://arxiv.org/abs/1508.04025">[Luong, 2015]</Link>
+        <Link to="https://arxiv.org/abs/1508.04025" external="true">[Luong, 2015]</Link>
         introduces the difference between global and local attention. The idea of a global attention is to use all the hidden states of the encoder when computing each context vector. The downside of a global attention model is that it has to attend to all words on the source side for each target word, which is computationally costly. To overcome this, the local attention first chooses a position in the source sentence. This position will determine a window of words that the model attends to. The authors also experimented with different alignment functions and simplified the computation path compared to Bahdanau’s work.
       </Paragraph>
       <Paragraph>
@@ -97,11 +98,11 @@
       <OrderedList>
         <Item>
           attention weights computation — see
-          <Link to="https://arxiv.org/abs/1611.01603">[Seo, 2016]</Link>
+          <Link to="https://arxiv.org/abs/1611.01603" external="true">[Seo, 2016]</Link>
         </Item>
         <Item>
           multi-pass &amp; single-pass — see
-          <Link to="https://arxiv.org/abs/1704.07415">[Gong, 2017]</Link>
+          <Link to="https://arxiv.org/abs/1704.07415" external="true">[Gong, 2017]</Link>
         </Item>
         <Item>one-dimensional attention &amp; two-dimensional attention</Item>
         <Item>one-way &amp; two-way attention (especially relevant for textual entailment and question answering)</Item>
@@ -110,7 +111,7 @@
       <Paragraph>
         I have tried to organize the papers mentioned in this post (and some other related to them) into a hierarchy of citations. 
         You can find a
-        <Link to="https://www.draw.io/?lightbox=1&amp;target=blank&amp;highlight=FFFFFF&amp;edit=_blank&amp;layers=1&amp;nav=1&amp;page=1#G1sflgpGyT4pccPy_4TCZfkEiCt2WmHEy0">clickable version here</Link>
+        <Link to="https://www.draw.io/?lightbox=1&amp;target=blank&amp;highlight=FFFFFF&amp;edit=_blank&amp;layers=1&amp;nav=1&amp;page=1#G1sflgpGyT4pccPy_4TCZfkEiCt2WmHEy0" external="true">clickable version here</Link>
         as a draw.io diagram. The colors of the cells correspond to the NLP task.
       </Paragraph>
     </Section>

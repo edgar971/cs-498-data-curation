@@ -3,14 +3,14 @@
 
 ### [10 points] Write prose documentation for each element, attribute, and attribute value.
 
-My process for creating the DTD was just going through the document and identifying key parts while having the activities and objective of the data curation process. 
+My process for creating the DTD was just going through the document and identifying key parts while having the activities and objective of the data curation process in mind. 
 This was a blog post so elements like Article, Title, and Author made sense. I was thinking how this document was going to be shared, organized, accessed, discovered, and stored. 
 Seeing how XML can be parsed and viewed in many ways led me to the structure I defined and the names of my elements and attributes. 
 
 Elements:
 - Article: The whole article page.
-- Title: The title of the article.
-- Date: The date of which the article was published.
+- Title: The title of the article. Can be used to show it quickly on a user interface. 
+- Date: The date of which the article was published. Can be used by a search index to rank articles by dates. 
 - AuthorName: The one or many author names in their article.
 - ArticleLength: The article length in minutes that it takes to read.
 - Body: The actual body of the article.
@@ -24,10 +24,11 @@ Elements:
 
 Attributes: 
 - Image src: The source URL of the image to show. 
-- Image description: The image description to show below or on hover. 
+- Image description: The image description to show below or on hover. This is useful to either display to the user or to provide more searchable information. 
 - Date timezone: The timezone of the articles published date. 
 - ArticleLength minutes: The number of minutes of the article. 
 - Link to: The URL where the link should take you including other documents for quick access.
+- Link external: To know if the link is external to the current document. This can be used to display the link differently in a web search or to crawl and index all external websites. 
 
 ### [25 points] Write a narrative about this process, answering the following reflection questions:
 
