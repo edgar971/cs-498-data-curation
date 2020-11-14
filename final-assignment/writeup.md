@@ -32,3 +32,7 @@ Attributes: id, type, date, timely, submissionType, and consumerDisputed
 
 MD5 Checksum: 47677272E76E1F4332AFE859347C8695
 
+2. [7 points] Create a DTD for each XML file. 
+
+Inside `./dtd` folder.
+
