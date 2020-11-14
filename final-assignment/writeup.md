@@ -22,7 +22,7 @@ Profile for o-koNMK7EemS6xJ43HxpzA_c97650e0e2494545926e53a8a475c0b8_Consumer_Com
   - It's using tabs for indentention but sometimes with spaces or tabs within the elements. 
   - Consistent element and attribute naming pattern known as camel casing. 
   - The overall structure is inconsistent and hard to follow. Some elements are in new lines and others just continue on the same. There is some consistent order but impossible to know without a defined DTD. 
-  - Complaint with id 837784 appears to have a note inside like a comment. 
+  - Complaint with id 837784 appears to have a note in comment syntax. 
 
 The file appears to be invalid as it contains no DTD definition and with 122 errors from validator. Most of them being undeclared elements and attributes. 
 
