@@ -1,3 +1,5 @@
+# Final Assignment (edgarsp2)
+
 Part 1 Instructions
 
 1. [5 points] Write a short profile of each file we have given you. Provide a narrative description of the file (50-100 words per file), including its format, properties, contents, and MD5 checksum. 
