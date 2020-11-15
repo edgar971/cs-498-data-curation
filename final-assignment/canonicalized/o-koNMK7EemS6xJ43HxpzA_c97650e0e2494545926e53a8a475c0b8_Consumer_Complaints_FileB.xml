@@ -188,21 +188,21 @@
     </response>
   </complaint>
   <complaint id="14038">
+    <event date="2017-01-17" type="received" />
+    <event date="2017-01-22" type="sentToCompany" />
+    <product>
+      <productType>Mortgage</productType>
+      <subproduct>Other mortgage</subproduct>
+    </product>
+    <issue>
+      <issueType>Loan servicing, payments, escrow account</issueType>
+    </issue>
     <company>
       <companyName>U.S. BANCORP</companyName>
       <companyState>AZ</companyState>
       <companyZip>85008</companyZip>
     </company>
-    <event date="2017-01-22" type="sentToCompany" />
     <submission type="Referral" />
-    <issue>
-      <issueType>Loan servicing, payments, escrow account</issueType>
-    </issue>
-    <product>
-      <productType>Mortgage</productType>
-      <subproduct>Other mortgage</subproduct>
-    </product>
-    <event date="2017-01-17" type="received" />
     <response consumerDisputed="Y" timely="Y">
       <responseType>Closed without relief</responseType>
     </response>
