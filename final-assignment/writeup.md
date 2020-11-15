@@ -36,7 +36,7 @@ MD5 Checksum: 47677272E76E1F4332AFE859347C8695
 
 2. [7 points] Create a DTD for each XML file. 
 
-Inside `./dtd` folder.
+Inside `./part-2-dtd` folder.
 
 
 3. [13 points] Canonicalize the two data files and run checksums again to check for equivalence.
@@ -64,9 +64,11 @@ o-koNMK7EemS6xJ43HxpzA_c97650e0e2494545926e53a8a475c0b8_Consumer_Complaints_File
 
 MD5 Checksum: BEF660CD4C17F22AEDEDC7AA6D816AF8
 
+Files in `./part-3-canonicalized` folder.
+
 4. [10 points] Create and document the DTD of the final, canonicalized data file, from step 3 above.
 
-Inside the `./final-canonicalized-and-dtd` folder.
+Files inside the `./part-4-final-and-dtd` folder.
 
 lLO5hsK7EemggQ4qJFCIWA_d27f0da94c8748abb2d364e1438808d7_Consumer_Complaints_FileA:
 - Ordered attributes in alphabetical order. 
