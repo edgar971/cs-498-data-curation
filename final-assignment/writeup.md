@@ -1,3 +1,5 @@
+Part 1 Instructions
+
 1. [5 points] Write a short profile of each file we have given you. Provide a narrative description of the file (50-100 words per file), including its format, properties, contents, and MD5 checksum. 
 
 Profile for lLO5hsK7EemggQ4qJFCIWA_d27f0da94c8748abb2d364e1438808d7_Consumer_Complaints_FileA.xml:
@@ -123,4 +125,22 @@ I would recommend the following curational activities for future discovery and u
 - Storage: Make sure we use storage that is reliable and easy to access. 
 - Discoverability: Data should be easily discovered. Having a data catalog or search engine would be a lot of benefit. 
 - Sharing: Improve the data data is shared between people, departments, and also external companies. 
+
+
+Part 2 Instructions [37 points]
+Dear Tony, 
+
+I would like to congratulate you on your new role as Director of Data Sciense. I want to take this opportunity to go over a few important points regarding our work and the impact of data curation. 
+
+Data curation is at the foundation of everything we do and it impacts the results of our work and ultimately, the company. It’s how we actively manage the data lifecycle. It enables data to be usable, documented, discovered, analized, and maintain a high level of quality. There are several benefits to data curation including some of the following: 
+The company is basing decisions on data that is reliable and trustworthy. 
+We can leverage user data to stay ahead of the competition. 
+Data that is easily accessible and discoverable. 
+Strong metadata. 
+
+We as data scientists are more effective and efficient. We can actually spend the time doing analysis, creating machine learning models, testing ideas, and overall delivering values instead of spending most of our time dealing with data problems. The benefit is not only on the data but the metadata as well. It can extend the longevity of data along with facilitating sharing and reusability.  Not only are we better but the company is as well. We can provide them with predictive analytics to make better decisions, accurate reports, and market analysis for new products. 
+
+Data curation will continue to allow us to efficiently and reliably support the analysis of data and reusability over time. Data is important and we don’t want to lose any of it so preservation is important. We want to make sure data is understandable and usable in the future not only to stay ahead of the competition but to understand our competitors and customers. We need to continue supporting the systems that allow us to store, manage, and extract this data along with having good provenance. We should be able to know where the source of the data, it’s transformations, schema, and overall if it can be trusted. 
+
+I’m really excited to be working with you and for the future of our work. 
 
