@@ -1,5 +1,5 @@
 <!ELEMENT consumerComplaints (complaint+)>
-<!ELEMENT complaint ((company|consumerNarrative|event|issue|product|submitted)+,response)>
+<!ELEMENT complaint ((company|consumerNarrative|event|issue|product|submission)+,response)>
 <!ATTLIST complaint id CDATA #REQUIRED>
 <!ELEMENT company (companyName,companyState,companyZip)>
 <!ELEMENT consumerNarrative (#PCDATA)>
