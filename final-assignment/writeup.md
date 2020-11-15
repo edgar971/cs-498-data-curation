@@ -63,3 +63,42 @@ o-koNMK7EemS6xJ43HxpzA_c97650e0e2494545926e53a8a475c0b8_Consumer_Complaints_File
 MD5 Checksum: BEF660CD4C17F22AEDEDC7AA6D816AF8
 
 4. [10 points] Create and document the DTD of the final, canonlicalized data file, from step 3 above.
+
+Inside `./final-canonicalized-and-dtd` folder.
+
+lLO5hsK7EemggQ4qJFCIWA_d27f0da94c8748abb2d364e1438808d7_Consumer_Complaints_FileA:
+- Ordered attributes in alphabetical order. 
+- Removed extra spaces. 
+- Used double space for indentation.  
+- Created submission element with type attribute to replace submitted and via. 
+- Order elements complaint with id 14038 to match others. 
+
+MD5 Checksum: BEF660CD4C17F22AEDEDC7AA6D816AF8
+
+o-koNMK7EemS6xJ43HxpzA_c97650e0e2494545926e53a8a475c0b8_Consumer_Complaints_FileB:
+- Ordered attributes in alphabetical order. 
+- Removed extra spaces. 
+- Used double space for indentation.  
+- Remove submissionType attribute and added submission element with type attribute.
+- Added missing submission element to complaints with IDs 2364257 and 837784.
+- Standardize no to N and yes to Y. 
+- Added missing timely attribute on the response element.
+- Remove extra space from U.S. BANCORP in line 34.
+- Order elements complaint with id 14038 to match others. 
+
+MD5 Checksum: BEF660CD4C17F22AEDEDC7AA6D816AF8
+
+5. [5 points] Be sure that all of your files validate as they will be assessed for compliance to their DTDs. You must test whether your document will validate against your DTD here: http://xmlvalidator.new-studio.org/
+
+File used to validate can be found inside `./final-validated` folder.
+
+6. [10 points] In a separate document, answer the following reflection prompts:
+
+a) Describe your process for canonicalization (i.e., decisions, actions, representation selection, attribute issues, provenance decisions). Report the checksum values after canonicalization.
+
+b) How does the way data is represented impact reproducibility?
+
+c) How may your canonicalization support the overarching goals of data curation (revisit objectives and activities of Week 1)?
+
+d) Which additional curation activities would you recommend to enhance the data set for future discovery and use?
+
