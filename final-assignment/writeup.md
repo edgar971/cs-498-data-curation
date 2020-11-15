@@ -100,6 +100,8 @@ I started by ordering attributes to alphabetical order and the elements to a con
 I then removed any extra spaces and converted everything to double space for indentation. I also made sure any missing data was ported over to document b.  
 I made sure that everything was properly named to make sure data re-usable and can be stored for later analysis. 
 
+MD5 Checksum: BEF660CD4C17F22AEDEDC7AA6D816AF8
+
 b) How does the way data is represented impact reproducibility?
 I believe that this will positively impact data reproducibility. The main reason is that the new format 
 supports the new and old system without any major refactoring. There is also no data loss.  
