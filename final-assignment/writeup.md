@@ -48,7 +48,7 @@ lLO5hsK7EemggQ4qJFCIWA_d27f0da94c8748abb2d364e1438808d7_Consumer_Complaints_File
 - Created submission element with type attribute to replace submitted and via. 
 - Order elements complaint with id 14038 to match others. 
 
-MD5 Checksum: BEF660CD4C17F22AEDEDC7AA6D816AF8
+MD5 Checksum: 75A5EE71CC857333BEB571602A72654D
 
 
 o-koNMK7EemS6xJ43HxpzA_c97650e0e2494545926e53a8a475c0b8_Consumer_Complaints_FileB:
@@ -62,7 +62,7 @@ o-koNMK7EemS6xJ43HxpzA_c97650e0e2494545926e53a8a475c0b8_Consumer_Complaints_File
 - Remove extra space from U.S. BANCORP in line 34.
 - Order elements complaint with id 14038 to match others. 
 
-MD5 Checksum: BEF660CD4C17F22AEDEDC7AA6D816AF8
+MD5 Checksum: 75A5EE71CC857333BEB571602A72654D
 
 Files in `./part-3-canonicalized` folder.
 
@@ -77,7 +77,7 @@ lLO5hsK7EemggQ4qJFCIWA_d27f0da94c8748abb2d364e1438808d7_Consumer_Complaints_File
 - Created submission element with type attribute to replace submitted and via. 
 - Order elements complaint with id 14038 to match others. 
 
-MD5 Checksum: BEF660CD4C17F22AEDEDC7AA6D816AF8
+MD5 Checksum: 75A5EE71CC857333BEB571602A72654D
 
 o-koNMK7EemS6xJ43HxpzA_c97650e0e2494545926e53a8a475c0b8_Consumer_Complaints_FileB:
 - Ordered attributes in alphabetical order. 
@@ -90,11 +90,11 @@ o-koNMK7EemS6xJ43HxpzA_c97650e0e2494545926e53a8a475c0b8_Consumer_Complaints_File
 - Remove extra space from U.S. BANCORP in line 34.
 - Order elements complaint with id 14038 to match others. 
 
-MD5 Checksum: BEF660CD4C17F22AEDEDC7AA6D816AF8
+MD5 Checksum: 75A5EE71CC857333BEB571602A72654D
 
 5. [5 points] Be sure that all of your files validate as they will be assessed for compliance to their DTDs. You must test whether your document will validate against your DTD here: http://xmlvalidator.new-studio.org/
 
-File used to validate can be found inside `./final-validated` folder.
+File used to validate can be found inside `./part-5-final-validated` folder.
 
 6. [10 points] In a separate document, answer the following reflection prompts:
 
@@ -104,7 +104,7 @@ I started by ordering attributes to alphabetical order and the elements to a con
 I then removed any extra spaces and converted everything to double space for indentation. I also made sure any missing data was ported over to document b.  
 I made sure that everything was properly named to make sure data re-usable and can be stored for later analysis. 
 
-MD5 Checksum: BEF660CD4C17F22AEDEDC7AA6D816AF8
+MD5 Checksum: 75A5EE71CC857333BEB571602A72654D
 
 b) How does the way data is represented impact reproducibility?
 I believe that this will positively impact data reproducibility. The main reason is that the new format 
