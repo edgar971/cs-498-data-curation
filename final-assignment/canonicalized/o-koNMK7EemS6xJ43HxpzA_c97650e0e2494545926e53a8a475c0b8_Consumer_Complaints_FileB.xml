@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <consumerComplaints>
-  <complaint id="759222" submissionType="Referral">
+  <complaint id="759222">
     <event date="2017-03-12" type="received" />
     <event date="2017-03-17" type="sentToCompany" />
     <product>
@@ -15,11 +15,12 @@
       <companyState>MI</companyState>
       <companyZip>48382</companyZip>
     </company>
-    <response timely="yes" consumerDisputed="Y">
+    <submission type="Referral" />
+    <response consumerDisputed="Y" timely="yes">
       <responseType>Closed with explanation</responseType>
     </response>
   </complaint>
-  <complaint id="596562" submissionType="Phone">
+  <complaint id="596562">
     <event date="2016-11-13" type="received" />
     <event date="2016-11-20" type="sentToCompany" />
     <product>
@@ -27,13 +28,14 @@
       <subproduct>Conventional adjustable mortgage</subproduct>
     </product>
     <issue>
-      <issueType>   Loan servicing, payments, escrow account</issueType>
+      <issueType>Loan servicing, payments, escrow account</issueType>
     </issue>
     <company>
       <companyName>U.S. BANCORP </companyName>
       <companyState>MN</companyState>
       <companyZip>48322</companyZip>
     </company>
+    <submission type="Phone" />
     <response consumerDisputed="N" timely="yes">
       <responseType>Closed with monetary relief</responseType>
     </response>
@@ -65,13 +67,13 @@
       <companyState>MA</companyState>
       <companyZip>19904</companyZip>
     </company>
-    <submitted />
+    <submission type="Web" />
     <response consumerDisputed="Y" timely="yes">
       <publicResponse>Company has responded to the consumer and the CFPB and chooses not to provide a public response</publicResponse>
       <responseType>Closed with explanation</responseType>
     </response>
   </complaint>
-  <complaint id="2327502" submissionType="Web">
+  <complaint id="2327502">
     <event date="2019-02-03" type="received" />
     <event date="2019-02-03" type="sentToCompany" />
     <product>
@@ -94,13 +96,13 @@
       <companyState>NY</companyState>
       <companyZip>10020</companyZip>
     </company>
+    <submission type="Web" />
     <response timely="yes" consumerDisputed="N">
-      <publicResponse>Company has responded to the consumer and the CFPB and chooses not to
-                provide a public response</publicResponse>
+      <publicResponse>Company has responded to the consumer and the CFPB and chooses not to provide a public response</publicResponse>
       <responseType>Closed with non-monetary relief</responseType>
     </response>
   </complaint>
-  <complaint id="2356421" submissionType="Web">
+  <complaint id="2356421">
     <event date="2018-02-23" type="received" />
     <event date="2018-02-23" type="sentToCompany" />
     <product>
@@ -134,13 +136,13 @@
       <companyState>AZ</companyState>
       <companyZip>85043</companyZip>
     </company>
-    <response timely="no" consumerDisputed="N">
-      <publicResponse>Company has responded to the consumer and the CFPB and chooses not to
-                provide a public response</publicResponse>
+    <submission type="Web" />
+    <response consumerDisputed="N" timely="no">
+      <publicResponse>Company has responded to the consumer and the CFPB and chooses not to provide a public response</publicResponse>
       <responseType>Closed with explanation</responseType>
     </response>
   </complaint>
-  <complaint id="2112558" submissionType="Web">
+  <complaint id="2112558">
     <event date="2017-09-15" type="received" />
     <event date="2017-09-15" type="sentToCompany" />
     <product>
@@ -159,7 +161,8 @@
       <companyState>OK</companyState>
       <companyZip>73135</companyZip>
     </company>
-    <response timely="no " consumerDisputed="N">
+    <submission type="Web" />
+    <response consumerDisputed="N" timely="no">
       <responseType>Untimely response</responseType>
     </response>
   </complaint>
@@ -179,17 +182,19 @@
       <companyState>DE</companyState>
       <companyZip>19802</companyZip>
     </company>
-    <response consumerDisputed="N">
+    <submission type="Web" />
+    <response consumerDisputed="N" timely="Y">
       <responseType>Closed with monetary relief</responseType>
     </response>
   </complaint>
-  <complaint id="14038" submissionType="Referral">
+  <complaint id="14038">
     <company>
       <companyName>U.S. BANCORP</companyName>
       <companyState>AZ</companyState>
       <companyZip>85008</companyZip>
     </company>
     <event date="2017-01-22" type="sentToCompany" />
+    <submission type="Referral" />
     <issue>
       <issueType>Loan servicing, payments, escrow account</issueType>
     </issue>

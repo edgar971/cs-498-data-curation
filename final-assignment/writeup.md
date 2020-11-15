@@ -36,3 +36,18 @@ MD5 Checksum: 47677272E76E1F4332AFE859347C8695
 
 Inside `./dtd` folder.
 
+
+3. [13 points] Canonicalize the two data files and run checksums again to check for equivalence.
+
+lLO5hsK7EemggQ4qJFCIWA_d27f0da94c8748abb2d364e1438808d7_Consumer_Complaints_FileA:
+- Ordered attributes in alphabetical order. 
+- Removed extra spaces. 
+- Used double space for indentation.  
+- Created submission element with type attribute to replace submitted and via. 
+
+o-koNMK7EemS6xJ43HxpzA_c97650e0e2494545926e53a8a475c0b8_Consumer_Complaints_FileB:
+- Ordered attributes in alphabetical order. 
+- Removed extra spaces. 
+- Used double space for indentation.  
+- Remove submissionType attribute and added submission element with type attribute
+- Added missing submission element to complaints with IDs 2364257, 837784

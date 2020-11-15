@@ -15,7 +15,7 @@
       <companyState>MI</companyState>
       <companyZip>48382</companyZip>
     </company>
-    <submitted via="Referral" />
+    <submission type="Referral" />
     <response consumerDisputed="Y" timely="Y">
       <responseType>Closed with explanation</responseType>
     </response>
@@ -35,7 +35,7 @@
       <companyState>MN</companyState>
       <companyZip>48322</companyZip>
     </company>
-    <submitted via="Phone" />
+    <submission type="Phone" />
     <response consumerDisputed="N" timely="Y">
       <responseType>Closed with monetary relief</responseType>
     </response>
@@ -67,10 +67,9 @@
       <companyState>MA</companyState>
       <companyZip>19904</companyZip>
     </company>
-    <submitted via="Web" />
+    <submission type="Web" />
     <response consumerDisputed="Y" timely="Y">
-      <publicResponse>Company has responded to the consumer and the CFPB and chooses not to
-                provide a public response</publicResponse>
+      <publicResponse>Company has responded to the consumer and the CFPB and chooses not to provide a public response</publicResponse>
       <responseType>Closed with explanation</responseType>
     </response>
   </complaint>
@@ -97,10 +96,9 @@
       <companyState>NY</companyState>
       <companyZip>10020</companyZip>
     </company>
-    <submitted via="Web" />
+    <submission type="Web" />
     <response consumerDisputed="N" timely="Y">
-      <publicResponse>Company has responded to the consumer and the CFPB and chooses not to
-                provide a public response</publicResponse>
+      <publicResponse>Company has responded to the consumer and the CFPB and chooses not to provide a public response</publicResponse>
       <responseType>Closed with non-monetary relief</responseType>
     </response>
   </complaint>
@@ -138,10 +136,9 @@
       <companyState>AZ</companyState>
       <companyZip>85043</companyZip>
     </company>
-    <submitted via="Web" />
+    <submission type="Web" />
     <response consumerDisputed="N" timely="N">
-      <publicResponse>Company has responded to the consumer and the CFPB and chooses not to
-                provide a public response</publicResponse>
+      <publicResponse>Company has responded to the consumer and the CFPB and chooses not to provide a public response</publicResponse>
       <responseType>Closed with explanation</responseType>
     </response>
   </complaint>
@@ -164,7 +161,7 @@
       <companyState>OK</companyState>
       <companyZip>73135</companyZip>
     </company>
-    <submitted via="Web" />
+    <submission type="Web" />
     <response consumerDisputed="N" timely="N">
       <responseType>Untimely response</responseType>
     </response>
@@ -185,7 +182,7 @@
       <companyState>DE</companyState>
       <companyZip>19802</companyZip>
     </company>
-    <submitted via="Web" />
+    <submission type="Web" />
     <response consumerDisputed="N" timely="Y">
       <responseType>Closed with monetary relief</responseType>
     </response>
@@ -197,7 +194,7 @@
       <companyZip>85008</companyZip>
     </company>
     <event date="2017-01-22" type="sentToCompany" />
-    <submitted via="Referral" />
+    <submission type="Referral" />
     <issue>
       <issueType>Loan servicing, payments, escrow account</issueType>
     </issue>
