@@ -45,6 +45,9 @@ lLO5hsK7EemggQ4qJFCIWA_d27f0da94c8748abb2d364e1438808d7_Consumer_Complaints_File
 - Used double space for indentation.  
 - Created submission element with type attribute to replace submitted and via. 
 
+MD5 Checksum: BEF660CD4C17F22AEDEDC7AA6D816AF8
+
+
 o-koNMK7EemS6xJ43HxpzA_c97650e0e2494545926e53a8a475c0b8_Consumer_Complaints_FileB:
 - Ordered attributes in alphabetical order. 
 - Removed extra spaces. 
@@ -54,3 +57,5 @@ o-koNMK7EemS6xJ43HxpzA_c97650e0e2494545926e53a8a475c0b8_Consumer_Complaints_File
 - Standardize no to N and yes to Y. 
 - Added missing timely attribute on the response element.
 - Remove extra space from U.S. BANCORP in line 34.
+
+MD5 Checksum: BEF660CD4C17F22AEDEDC7AA6D816AF8
