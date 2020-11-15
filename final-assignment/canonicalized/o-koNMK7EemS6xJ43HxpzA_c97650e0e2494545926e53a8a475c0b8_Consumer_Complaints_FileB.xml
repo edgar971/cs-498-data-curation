@@ -16,7 +16,7 @@
       <companyZip>48382</companyZip>
     </company>
     <submission type="Referral" />
-    <response consumerDisputed="Y" timely="yes">
+    <response consumerDisputed="Y" timely="Y">
       <responseType>Closed with explanation</responseType>
     </response>
   </complaint>
@@ -36,7 +36,7 @@
       <companyZip>48322</companyZip>
     </company>
     <submission type="Phone" />
-    <response consumerDisputed="N" timely="yes">
+    <response consumerDisputed="N" timely="Y">
       <responseType>Closed with monetary relief</responseType>
     </response>
   </complaint>
@@ -68,7 +68,7 @@
       <companyZip>19904</companyZip>
     </company>
     <submission type="Web" />
-    <response consumerDisputed="Y" timely="yes">
+    <response consumerDisputed="Y" timely="Y">
       <publicResponse>Company has responded to the consumer and the CFPB and chooses not to provide a public response</publicResponse>
       <responseType>Closed with explanation</responseType>
     </response>
@@ -97,7 +97,7 @@
       <companyZip>10020</companyZip>
     </company>
     <submission type="Web" />
-    <response timely="yes" consumerDisputed="N">
+    <response consumerDisputed="N" timely="Y">
       <publicResponse>Company has responded to the consumer and the CFPB and chooses not to provide a public response</publicResponse>
       <responseType>Closed with non-monetary relief</responseType>
     </response>
@@ -137,7 +137,7 @@
       <companyZip>85043</companyZip>
     </company>
     <submission type="Web" />
-    <response consumerDisputed="N" timely="no">
+    <response consumerDisputed="N" timely="N">
       <publicResponse>Company has responded to the consumer and the CFPB and chooses not to provide a public response</publicResponse>
       <responseType>Closed with explanation</responseType>
     </response>
@@ -162,7 +162,7 @@
       <companyZip>73135</companyZip>
     </company>
     <submission type="Web" />
-    <response consumerDisputed="N" timely="no">
+    <response consumerDisputed="N" timely="N">
       <responseType>Untimely response</responseType>
     </response>
   </complaint>
@@ -203,7 +203,7 @@
       <subproduct>Other mortgage</subproduct>
     </product>
     <event date="2017-01-17" type="received" />
-    <response consumerDisputed="Y">
+    <response consumerDisputed="Y" timely="Y">
       <responseType>Closed without relief</responseType>
     </response>
   </complaint>

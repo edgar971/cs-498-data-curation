@@ -49,5 +49,7 @@ o-koNMK7EemS6xJ43HxpzA_c97650e0e2494545926e53a8a475c0b8_Consumer_Complaints_File
 - Ordered attributes in alphabetical order. 
 - Removed extra spaces. 
 - Used double space for indentation.  
-- Remove submissionType attribute and added submission element with type attribute
-- Added missing submission element to complaints with IDs 2364257, 837784
+- Remove submissionType attribute and added submission element with type attribute.
+- Added missing submission element to complaints with IDs 2364257 and 837784.
+- Standardize no to N and yes to Y. 
+- Added missing timely attribute on the response element.
