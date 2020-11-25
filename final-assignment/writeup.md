@@ -101,10 +101,11 @@ File used to validate can be found inside `./part-5-final-validated` folder.
 6. [10 points] In a separate document, answer the following reflection prompts:
 
 a) Describe your process for canonicalization (i.e., decisions, actions, representation selection, attribute issues, provenance decisions). Report the checksum values after canonicalization.
-My process for canonicalization was following the lectures and help from Piazza and Slack. It was fairly simple for the most part. 
-I started by ordering attributes to alphabetical order and the elements to a consistent order. 
-I then removed any extra spaces and converted everything to double space for indentation. I also made sure any missing data was ported over to document b.  
-I made sure that everything was properly named to make sure data re-usable and can be stored for later analysis. 
+My process for canonicalization was following the lectures and help from Piazza and Slack. It was fairly simple for the most part. I started by ordering attributes in alphabetical order and the elements to a consistent order. I did this to make the document cleaner and overall easier to read/parse. I then removed any extra spaces and converted everything to double space for indentation. I also made sure any missing data was ported over to document b. This is because we don't want any data loss for existing and new data. This allows for both systems to be online at the same time during the transition process and also for old data to be ported over to the new system without any data loss. I made sure that everything was properly named to make sure data re-usable and can be stored for later analysis. 
+
+In terms of the elements and attributes, most stayed the same. This is because most had good and consistent naming patterns that were clear to understand. The submissionType attribute was converted to an element to follow the same pattern like the event element. Some attribute values were inconsistent for timely and consumerDisputed, y or yes and n or no. I made sure to use Y for yes and N for no. 
+
+
 
 MD5 Checksum: 75A5EE71CC857333BEB571602A72654D
 
@@ -134,15 +135,17 @@ I would recommend the following curational activities for future discovery and u
 Part 2 Instructions [37 points]
 Dear Tony, 
 
-I would like to congratulate you on your new role as Director of Data Sciense. I want to take this opportunity to go over a few important points regarding our work and the impact of data curation. 
+I would like to congratulate you on your new role as Director of Data Science. I want to take this opportunity to go over a few important points regarding our work and the impact of data curation. 
 
 Data curation is at the foundation of everything we do and it impacts the results of our work and ultimately, the company. It’s how we actively manage the data lifecycle. It enables data to be usable, documented, discovered, analized, and maintain a high level of quality. There are several benefits to data curation including some of the following: 
-The company is basing decisions on data that is reliable and trustworthy. 
-We can leverage user data to stay ahead of the competition. 
-Data that is easily accessible and discoverable. 
-Strong metadata. 
+- The company is basing decisions on data that is reliable and trustworthy. 
+- We can leverage user data to stay ahead of the competition. 
+- Data that is easily accessible and discoverable. 
+- Strong metadata. 
 
 We as data scientists are more effective and efficient. We can actually spend the time doing analysis, creating machine learning models, testing ideas, and overall delivering values instead of spending most of our time dealing with data problems. The benefit is not only on the data but the metadata as well. It can extend the longevity of data along with facilitating sharing and reusability.  Not only are we better but the company is as well. We can provide them with predictive analytics to make better decisions, accurate reports, and market analysis for new products. 
+
+I will use the new company we just acquired as an example. We want to integrate their product into our existing platform while keeping all data not only for a better end user experience but also for business reasons. With data curation practices, we can properly move the data into our system without any data loss. This is a major benefit to us since it will keep the data reusability, discoverability, provenance, and integration. Having provenance will allow us to follow the data transformations and source, which is important if we want to make decisions on this new data we inherited. Discoverability allows us to search for this new data and create new products or analysis around it. All of this will be hard to accomplish without the practice of data curation. 
 
 Data curation will continue to allow us to efficiently and reliably support the analysis of data and reusability over time. Data is important and we don’t want to lose any of it so preservation is important. We want to make sure data is understandable and usable in the future not only to stay ahead of the competition but to understand our competitors and customers. We need to continue supporting the systems that allow us to store, manage, and extract this data along with having good provenance. We should be able to know where the source of the data, it’s transformations, schema, and overall if it can be trusted. 
 
